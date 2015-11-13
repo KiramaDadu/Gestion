@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Agregar libro</title>
+
+    <!-- Bootstrap -->
+    <!-- Bootstrap Core CSS -->
+    <link href="<?php echo URL_BASE."/public/css/bootstrap.min.css"?>">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="<?php echo URL_BASE."/public/font-awesome/css/font-awesome.min.css"?>">
+
+    <!-- Plugin CSS -->
+    <link href="<?php echo URL_BASE."css/animate.min.css"?>">
+
+    <!-- Custom CSS -->
+    <link href="<?php echo URL_BASE."css/creative.css"?>">
+
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">GESTION BIBLIOTECARIA DEL TEC MANTE</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+
+    <div class="container">
+    <h2>Agregar libro:</h2><br/>
+    </div>
+
+
+  <section id="formulario">
+    <div class="container">
+
+<!-- Formulario -->
+    <form class="form-horizontal" role="form">
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="nombre">Codigo:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="codigo" required="required" placeholder="Codigo">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="titulo">Titulo-edicion:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="titulo" required="required" placeholder="Titulo-edicion">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="ISBN">ISBN:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="ISBN" required="required" placeholder="ISBN">
+          <p class="help-block"></p>
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="autor">Autor:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="autor" placeholder="Autor">
+          <p class="help-block"></p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="genero">Genero:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="genero" placeholder="Genero">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="descripcion">Descripcion:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="descripcion" required="required" placeholder="Descripcion">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="año">Año de publicacion:</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="año" required="required" placeholder="Año">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="editorial">Editorial:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="editorial" required="required" placeholder="Editorial">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="fecha">Fecha de publicacion:</label>
+
+        <div class="col-sm-2">
+          <input type="number" class="form-control" id="fecha" min="1" max="12" placeholder="Mes">
+        </div>
+
+        <div class="col-sm-2">
+          <input type="number" class="form-control" id="fecha" min="1985" max="1998" placeholder="Año">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="ciudad">Ciudad de publicacion:</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="ciudad" required="required" placeholder="Ciudad">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="ejemplares">Cantidad de ejemplares:</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="ejemplares" required="required" placeholder="">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cantidad">Cantidad de ejemplares prestados:</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="cantidad" required="required" placeholder="">
+          <br/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="paginas">Numero de paginas:</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="paginas" required="required" placeholder="">
+          <br/>
+        </div>
+      </div>
+
+
+    <div class="form-group col-xs-10">
+      <div class="col-sm-2">
+        <button class="btn btn-sucess btn-md" type="submit">Guardar</button>
+      </div>
+      <div class="col-sm-2">
+        <button class="btn btn-sucess btn-md" type="submit">Cancelar</button>
+      </div>
+    </div>
+
+
+  </div>
+  </section>
+
+    <script src="<?php echo URL_BASE."/public/js/jquery.js"?>"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo URL_BASE."/public/js/bootstrap.min.js"?>"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="<?php echo URL_BASE."/public/js/jquery.easing.min.js"?>"></script>
+    <script src="<?php echo URL_BASE."js/jquery.fittext.js"?>"></script>
+    <script src="<?php echo URL_BASE."js/wow.min.js"?>"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="<?php echo URL_BASE."js/creative.js"?>"></script>
+  </body>
+</html>
